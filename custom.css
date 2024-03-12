@@ -34,6 +34,7 @@ body {
 
 .image-caption {
   margin-left: 40px;
+  margin-right: 20px;
 }
 
 .download-link {
@@ -99,6 +100,16 @@ body {
 
 .popup-content {
     padding:76px
+}
+
+@media only screen and (max-width: 1023px) and(max-device-width: 736px) {
+    .popup-content {
+        padding:76px 6.25% 60px
+    }
+
+    .rc-overlay-with-footer .rc-overlay-popup-content {
+        flex-grow:1
+    }
 }
 
 .rc-header {
