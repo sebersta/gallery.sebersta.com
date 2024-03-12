@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     color: #6e6e73;
     margin: 16px 16px 16px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.33337;
     font-weight: 600;
     letter-spacing: -.01em;
@@ -35,7 +35,7 @@ body {
 
 .image-caption {
   margin-left: 40px;
-  garmin-right: 20px;
+  margin-right: 20px;
 }
 
 .download-link {
