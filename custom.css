@@ -1,0 +1,168 @@
+body {
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 20px 0;
+    background-color: white;
+    color: black;
+}
+
+.picture-image {
+    max-width: 100%;
+    /* max-height: 80vh; */
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 18px;
+}
+
+.media-container {
+    max-width: 110vh;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden; /* This ensures that the border-radius applies to the image as well */
+}
+
+.image-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #6e6e73;
+    margin: 16px 16px 16px;
+    font-size: 14px;
+    line-height: 1.33337;
+    font-weight: 600;
+    letter-spacing: -.01em;
+}
+
+.image-caption {
+  margin-left: 40px;
+}
+
+.download-link {
+    display: inline-block;
+    text-decoration: none;
+    /* Add additional styling if needed */
+    margin-right: 40px;
+    height: 20px; /* or any other size */
+    vertical-align: middle;
+
+}
+
+.download-link:hover svg:hover path:nth-child(2) {
+    fill: #E8E8ED;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust the space between icons */
+    margin-top: 100px; /* Space from the content above */
+}
+
+.icon {
+    color: #6e6e73; /* Adjust icon color */
+    font-size: 24px; /* Adjust icon size */
+}
+
+.icon:hover {
+  opacity: 0.85;
+}
+
+.popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center; /* This centers the child vertically */
+  justify-content: center; /* This centers the child horizontally */
+  z-index: 1000;
+}
+
+.popup-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFF;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  max-width: 80vw; /* It will be as wide as the content up to 80vw */
+  z-index: 2;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; /* Added this so that close button can be positioned relatively */
+  overflow:hidden;
+}
+
+.popup-content {
+    padding:76px
+}
+
+.rc-header {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding-bottom: 29px;
+  margin: 0;
+  text-align:center
+}
+
+.rc-fulldesc h3 {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: .009em;
+  text-align: left;
+  padding-bottom: 0;
+  padding-top: 30px;
+  margin-top:0
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: white;
+    }
+    
+    .image-description {
+        color: #F5F5F7;
+    }
+
+    .download-link svg path:nth-child(3) {
+        fill: #E4E4E4;
+    }
+
+    .download-link svg path:nth-child(2) {
+        fill: #4E4E4E;
+    }
+    
+    .download-link:hover svg:hover path:nth-child(2) {
+        fill: #9A9A9A;
+    }
+
+    .icon {
+        color: #F5F5F7;
+    }
+
+    .popup-container {
+        background: #1F1F1F;
+    }
+
+    .popup-content {
+        color: #F5F5F7;
+    }
+
+    .rc-header {
+        color: #F5F5F7;
+    }
+
+    .rc-fulldesc h3 {
+        color: #F5F5F7;
+    }
+}
+
