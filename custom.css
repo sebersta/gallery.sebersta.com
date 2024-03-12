@@ -98,7 +98,21 @@ body {
 }
 
 .popup-content {
-  margin: auto;
+    padding: 76px;
+}
+
+/* Smaller devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+    .popup-content {
+        padding: 30px; /* you can adjust the padding as you find appropriate */
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+    .popup-content {
+        padding: 50px; /* you can adjust the padding as you find appropriate */
+    }
 }
 
 .rc-header {
